@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Widget.App.Toolbar" parent="Widget.Material3.Toolbar">
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">@color/C0392B</item>
+        <item name="android:textColorSecondary">@color/white</item>
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.Toolbar</item>
+        <!--        <item name="titleTextAppearance">@style/TextAppearance.App.TitleLarge</item>-->
+        <!--        <item name="subtitleTextAppearance">@style/TextAppearance.App.TitleMedium</item>-->
+    </style>
+
+    <style name="ThemeOverlay.App.Toolbar" parent="">
+        <item name="colorSurface">@color/E74C3C</item>
+        <item name="android:fontWeight" tools:targetApi="o">800</item>
+        <item name="colorOnSurface">@color/C0392B</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/C0392B</item>
+        <item name="colorPrimaryDark">@color/E74C3C</item>
+        <item name="colorAccent">@color/C0392B</item>
+    </style>
+
+    <style name="TextAppearance.App.TextLarge" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:fontWeight" tools:targetApi="o">800</item>
+    </style>
+
+    <style name="TextAppearance.App.MediumMedium" parent="TextAppearance.Material3.TitleMedium">
+    </style>
+</resources>
