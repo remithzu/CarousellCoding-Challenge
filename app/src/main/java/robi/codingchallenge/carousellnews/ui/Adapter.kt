@@ -1,6 +1,7 @@
 package robi.codingchallenge.carousellnews.ui
 
 import android.annotation.SuppressLint
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -42,7 +43,8 @@ class Adapter: RecyclerView.Adapter<Adapter.ViewHolder>(){
                 .into(holder.binding.imageView)
             holder.binding.tvTitle.text = m.title
             holder.binding.tvDescription.text = m.description
-            holder.binding.tvTime.text = DateTime.duration(m.timeCreated.toLong())
+            val duration = DateTime.duration(m.timeCreated.toLong())
+            holder.binding.tvTime.text = duration
         }
     }
 

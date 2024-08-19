@@ -2,15 +2,11 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.CarousellNews" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <item name="android:windowTranslucentStatus">true</item>
-        <item name="windowActionModeOverlay">true</item>
-        <item name="colorSurface">@color/alizarin</item>
-        <item name="colorOnSurface">@color/pomegranate</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
         <item name="toolbarStyle">@style/Widget.App.Toolbar</item>
-        <item name="android:statusBarColor">@color/pomegranate</item>
-        <item name="textAppearanceTitleLarge">@style/TextAppearance.App.TitleLarge</item>
-        <item name="textAppearanceTitleMedium">@style/TextAppearance.App.TitleMedium</item>
-        <item name="drawableTint">@color/clouds</item>
+        <item name="android:actionOverflowButtonStyle">@style/MyActionButtonOverflow</item>
     </style>
 
     <style name="Theme.CarousellNews" parent="Base.Theme.CarousellNews" />

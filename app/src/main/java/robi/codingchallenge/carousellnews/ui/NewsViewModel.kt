@@ -20,7 +20,7 @@ import javax.inject.Inject
 @ViewModelScoped
 class NewsViewModel @Inject constructor(application: Application, private val repository: NetworkRepository) : AndroidViewModel(application) {
     val compositeDisposable = CompositeDisposable()
-    private val _news = MutableLiveData<NetworkState<MutableList<News>>>()
+    val _news = MutableLiveData<NetworkState<MutableList<News>>>()
     val news: LiveData<NetworkState<MutableList<News>>> = _news
 
     fun getNews() {
