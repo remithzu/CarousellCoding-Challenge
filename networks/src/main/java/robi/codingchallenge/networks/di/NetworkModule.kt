@@ -1,6 +1,5 @@
 package robi.codingchallenge.networks.di
 
-import android.app.Application
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -12,7 +11,6 @@ import retrofit2.adapter.rxjava3.RxJava3CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
 import robi.codingchallenge.networks.BuildConfig
 import robi.codingchallenge.networks.NetworkApi
-import robi.codingchallenge.networks.data.NewsViewModel
 import robi.codingchallenge.networks.repository.NetworkRepository
 import robi.codingchallenge.networks.repository.NetworkRepositoryImpl
 import javax.inject.Singleton
@@ -34,10 +32,6 @@ object NetworkModule {
             .build()
             .create(NetworkApi::class.java)
     }
-
-    @Provides
-    @Singleton
-    fun provideNewsViewModel(application: Application, repository: NetworkRepository) = NewsViewModel(application,repository)
 
     @Provides
     @Singleton

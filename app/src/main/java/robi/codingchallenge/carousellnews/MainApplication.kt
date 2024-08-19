@@ -1,4 +1,4 @@
-package robi.codingchallenge.networks
+package robi.codingchallenge.carousellnews
 
 import android.content.Context
 import androidx.multidex.BuildConfig
@@ -7,7 +7,7 @@ import androidx.multidex.MultiDexApplication
 import dagger.hilt.android.HiltAndroidApp
 
 @HiltAndroidApp
-class NetworkApp: MultiDexApplication() {
+class MainApplication: MultiDexApplication() {
 
     override fun attachBaseContext(base: Context?) {
         super.attachBaseContext(base)

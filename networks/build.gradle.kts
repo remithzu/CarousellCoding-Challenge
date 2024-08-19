@@ -2,9 +2,9 @@ plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.jetbrains.kotlin.android)
     alias(libs.plugins.google.devtools.ksp)
-    alias(libs.plugins.google.dagger.hilt.plugin)
+    alias(libs.plugins.google.dagger.hilt.android)
 }
-val propertiesFile = file("../config/endpoint.properties")
+val propertiesFile = file("../app/config/endpoint.properties")
 android {
     namespace = "robi.codingchallenge.networks"
     compileSdk = 34
@@ -59,24 +59,29 @@ android {
 }
 
 dependencies {
-    implementation(project(":app:library"))
+    implementation(project(":library"))
     implementation(libs.androidx.core.ktx)
     implementation(libs.google.devtools.ksp)
     implementation(libs.google.hilt.android)
     implementation(libs.io.reactivex.rxjava)
     implementation(libs.io.reactivex.rxandroid)
-    implementation(libs.androidx.lifecycle.viewmodel.ktx)
-    implementation(libs.androidx.lifecycle.livedata.ktx)
-    implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.squareup.retrofit)
     implementation(libs.squareup.adapter.rxjava3)
     implementation(libs.squareup.converter.gson)
     implementation(libs.squareup.okhttp)
     implementation(libs.squareup.logging.interceptor)
-    implementation(libs.multidex)
-    ksp(libs.google.hilt.compiler)
+    implementation(libs.androidx.lifecycle.viewmodel.ktx)
+    implementation(libs.androidx.lifecycle.livedata.ktx)
+    implementation(libs.androidx.lifecycle.runtime.ktx)
+
     ksp(libs.google.dagger.compiler)
+    ksp(libs.google.hilt.compiler)
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+}
+
+hilt {
+    enableAggregatingTask = false
 }

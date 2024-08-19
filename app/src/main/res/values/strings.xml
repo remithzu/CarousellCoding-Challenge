@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">CarousellNews</string>
+    <string name="content_description_more">content_description_more</string>
+    <string name="more">More</string>
 </resources>

@@ -2,30 +2,39 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <style name="Widget.App.Toolbar" parent="Widget.Material3.Toolbar">
         <item name="windowNoTitle">true</item>
-        <item name="android:statusBarColor">@color/C0392B</item>
-        <item name="android:textColorSecondary">@color/white</item>
+        <item name="android:statusBarColor">@color/alizarin</item>
+        <item name="android:textColorSecondary">@color/pomegranate</item>
         <item name="materialThemeOverlay">@style/ThemeOverlay.App.Toolbar</item>
         <!--        <item name="titleTextAppearance">@style/TextAppearance.App.TitleLarge</item>-->
         <!--        <item name="subtitleTextAppearance">@style/TextAppearance.App.TitleMedium</item>-->
     </style>
 
     <style name="ThemeOverlay.App.Toolbar" parent="">
-        <item name="colorSurface">@color/E74C3C</item>
+        <item name="colorSurface">@color/alizarin</item>
+        <item name="colorOnSurface">@color/pomegranate</item>
         <item name="android:fontWeight" tools:targetApi="o">800</item>
-        <item name="colorOnSurface">@color/C0392B</item>
     </style>
 
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/C0392B</item>
-        <item name="colorPrimaryDark">@color/E74C3C</item>
-        <item name="colorAccent">@color/C0392B</item>
+        <item name="colorPrimary">@color/alizarin</item>
+        <item name="colorPrimaryDark">@color/pomegranate</item>
+        <item name="colorAccent">@color/asbestos</item>
     </style>
 
-    <style name="TextAppearance.App.TextLarge" parent="TextAppearance.Material3.TitleLarge">
-        <item name="android:fontWeight" tools:targetApi="o">800</item>
+    <style name="TextAppearance.App.TitleLarge" parent="TextAppearance.Material3.TitleLarge">
+<!--        <item name="fontFamily">@font/rubik</item>-->
+<!--        <item name="android:fontFamily">@font/rubik</item>-->
+        <item name="android:textColor">@color/clouds</item>
+        <item name="fontWeight">700</item>
+        <item name="android:textStyle">bold</item>
     </style>
 
-    <style name="TextAppearance.App.MediumMedium" parent="TextAppearance.Material3.TitleMedium">
+    <style name="TextAppearance.App.TitleMedium" parent="TextAppearance.Material3.TitleMedium">
+<!--        <item name="fontFamily">@font/rubik</item>-->
+<!--        <item name="android:fontFamily">@font/rubik</item>-->
+        <item name="android:textColor">@color/clouds</item>
+        <item name="fontWeight">500</item>
+        <item name="android:textStyle">bold</item>
     </style>
 </resources>
