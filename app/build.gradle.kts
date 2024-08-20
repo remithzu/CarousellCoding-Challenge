@@ -67,7 +67,6 @@ dependencies {
     implementation(libs.androidx.lifecycle.livedata.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.swiperefreshlayout)
-    testImplementation(libs.junit.junit)
 
     ksp(libs.google.dagger.compiler)
     ksp(libs.google.hilt.compiler)
